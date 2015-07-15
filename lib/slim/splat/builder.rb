@@ -70,7 +70,7 @@ module Slim
         attrs.map do |k, v|
           if v == true
             if @options[:format] == :xhtml
-              " #{k}=#{@options[:attr_quote]}#{@options[:attr_quote]}"
+              " #{k}=#{@options[:attr_quote]}true#{@options[:attr_quote]}"
             else
               " #{k}"
             end
